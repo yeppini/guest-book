@@ -1,58 +1,93 @@
 body {
-  background-color: #faf7f2;
+  background: #faf5ef;
   color: #4b4038;
   font-family: "Georgia", serif;
-  text-align: center;
-  padding: 60px 20px;
+  margin: 0;
+  padding: 0;
 }
+
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 70px 0;
+  text-align: center;
+}
+
 
 h1 {
   font-size: 42px;
-  letter-spacing: 8px;
   font-weight: 400;
-  margin-bottom: 15px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
 }
 
-p {
-  font-size: 16px;
-  color: #8a7b70;
-  line-height: 1.8;
+
+.subtitle {
+  color: #9b8878;
+  font-size: 15px;
+  margin-bottom: 45px;
 }
 
-hr {
-  width: 80px;
-  border: none;
-  border-top: 1px solid #d8cbbd;
-  margin: 40px auto;
+
+.letter-box {
+  background: #fffdf9;
+  padding: 35px 25px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(120, 90, 60, 0.08);
 }
+
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
 
 input,
 textarea {
-  width: 90%;
-  max-width: 400px;
+  width: 85%;
   padding: 15px;
-  border: 1px solid #e3d8cc;
-  border-radius: 15px;
-  background-color: #fffdf9;
-  font-size: 14px;
   margin-bottom: 15px;
+  border: 1px solid #eadfd3;
+  border-radius: 12px;
+  background: #fffaf5;
+  font-size: 14px;
 }
+
 
 textarea {
   height: 120px;
-  resize: none;
 }
+
 
 button {
-  background-color: #c9a98b;
-  color: white;
+  margin-top: 10px;
+  padding: 13px 35px;
   border: none;
-  padding: 14px 35px;
   border-radius: 30px;
-  font-size: 15px;
-  cursor: pointer;
+  background: #c9a07a;
+  color: white;
+  font-size: 14px;
 }
 
-button:hover {
-  opacity: 0.8;
+
+.messages {
+  margin-top: 50px;
+}
+
+
+.message-card {
+  background: #fffdf9;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(120, 90, 60, 0.06);
+}
+
+
+.message-card p {
+  color: #7c6b5d;
 }

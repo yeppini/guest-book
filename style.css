@@ -46,25 +46,37 @@ h2 {
 }
 
 
+label {
+  display: block;
+  text-align: left;
+  width: 85%;
+  margin: 0 auto 8px;
+  color: #9b8878;
+  font-size: 13px;
+}
+
+
 input,
 textarea {
   width: 85%;
   padding: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border: 1px solid #eadfd3;
   border-radius: 12px;
   background: #fffaf5;
   font-size: 14px;
+  font-family: inherit;
 }
 
 
 textarea {
   height: 120px;
+  resize: none;
 }
 
 
 button {
-  margin-top: 10px;
+  margin-top: 5px;
   padding: 13px 35px;
   border: none;
   border-radius: 30px;

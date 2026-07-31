@@ -103,7 +103,13 @@ button {
 .message-card p {
   color: #7c6b5d;
 }
-
+.message-card small {
+  display: block;
+  margin-top: 15px;
+  color: #b7a392;
+  font-size: 12px;
+  text-align: right;
+}
 .letter-box {
   display: block;
 }

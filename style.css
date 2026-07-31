@@ -121,7 +121,5 @@ button {
   margin-right: auto;
 }
 .letter-box {
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
+  display: block;
 }

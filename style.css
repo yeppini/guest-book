@@ -123,3 +123,20 @@ button {
 .letter-box {
   display: block;
 }
+.letter-box {
+  display: block !important;
+}
+
+.letter-box h2,
+.letter-box label,
+.letter-box input,
+.letter-box textarea,
+.letter-box button {
+  display: block;
+}
+
+.letter-box input,
+.letter-box textarea {
+  margin-left: auto;
+  margin-right: auto;
+}

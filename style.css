@@ -48,9 +48,9 @@ h2 {
 
 label {
   display: block;
-  text-align: left;
   width: 85%;
   margin: 0 auto 8px;
+  text-align: left;
   color: #9b8878;
   font-size: 13px;
 }
@@ -58,14 +58,21 @@ label {
 
 input,
 textarea {
+  display: block;
   width: 85%;
+  margin: 0 auto 20px;
   padding: 15px;
-  margin-bottom: 20px;
   border: 1px solid #eadfd3;
   border-radius: 12px;
   background: #fffaf5;
   font-size: 14px;
   font-family: inherit;
+  box-sizing: border-box;
+}
+
+
+input {
+  height: 50px;
 }
 
 
@@ -96,6 +103,7 @@ button {
   padding: 20px;
   border-radius: 20px;
   text-align: left;
+  margin-top: 20px;
   box-shadow: 0 8px 20px rgba(120, 90, 60, 0.06);
 }
 
@@ -103,40 +111,12 @@ button {
 .message-card p {
   color: #7c6b5d;
 }
+
+
 .message-card small {
   display: block;
   margin-top: 15px;
   color: #b7a392;
   font-size: 12px;
   text-align: right;
-}
-.letter-box {
-  display: block;
-}
-
-.letter-box input,
-.letter-box textarea {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.letter-box {
-  display: block;
-}
-.letter-box {
-  display: block !important;
-}
-
-.letter-box h2,
-.letter-box label,
-.letter-box input,
-.letter-box textarea,
-.letter-box button {
-  display: block;
-}
-
-.letter-box input,
-.letter-box textarea {
-  margin-left: auto;
-  margin-right: auto;
 }

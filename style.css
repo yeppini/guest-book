@@ -1,181 +1,101 @@
 body {
-  background: #faf5ef;
-  color: #4b4038;
-  font-family: "Georgia", serif;
   margin: 0;
-  padding: 0;
+  background: #faf7f2;
+  font-family: Arial, sans-serif;
+  color: #444;
 }
 
-
 .container {
-  width: 90%;
   max-width: 500px;
-  margin: 0 auto;
-  padding: 70px 0;
-  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
 }
 
 
 h1 {
-  font-size: 42px;
-  font-weight: 400;
-  letter-spacing: 3px;
+  text-align: center;
+  font-size: 38px;
   margin-bottom: 10px;
 }
 
 
 .subtitle {
-  color: #9b8878;
-  font-size: 15px;
-  margin-bottom: 45px;
+  text-align: center;
+  color: #888;
+  margin-bottom: 40px;
 }
 
 
-.letter-box {
-  background: #fffdf9;
-  padding: 35px 25px;
-  border-radius: 25px;
-  box-shadow: 0 10px 30px rgba(120, 90, 60, 0.08);
+.letter-box,
+.messages {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 25px;
 }
 
 
 h2 {
   font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 
 label {
   display: block;
-  width: 85%;
-  margin: 0 auto 8px;
-  text-align: left;
-  color: #9b8878;
-  font-size: 13px;
+  margin-top: 15px;
+  margin-bottom: 8px;
 }
 
 
 input,
 textarea {
-  display: block;
-  width: 85%;
-  margin: 0 auto 20px;
-  padding: 15px;
-  border: 1px solid #eadfd3;
-  border-radius: 12px;
-  background: #fffaf5;
-  font-size: 14px;
-  font-family: inherit;
+  width: 100%;
   box-sizing: border-box;
-}
-
-
-input {
-  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 15px;
 }
 
 
 textarea {
-  height: 120px;
+  height: 130px;
   resize: none;
 }
 
 
 button {
-  margin-top: 5px;
-  padding: 13px 35px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
   border: none;
-  border-radius: 30px;
-  background: #c9a07a;
-  color: white;
-  font-size: 14px;
-}
-
-
-.messages {
-  margin-top: 50px;
-}
-
-
-.message-card {
-  background: #fffdf9;
-  padding: 20px;
   border-radius: 20px;
-  text-align: left;
-  margin-top: 20px;
-  box-shadow: 0 8px 20px rgba(120, 90, 60, 0.06);
+  background: #444;
+  color: white;
+  font-size: 15px;
 }
 
-
-.message-card p {
-  color: #7c6b5d;
-}
-
-
-.message-card small {
-  display: block;
-  margin-top: 15px;
-  color: #b7a392;
-  font-size: 12px;
-  text-align: right;
-}
-
-.message-card strong {
-  font-size: 16px;
-  font-weight: 500;
-  color: #6b5545;
-}
-
-
-.message-card hr {
-  border: none;
-  border-top: 1px solid #eadfd3;
-  margin: 18px 0 12px;
-}
-
-
-.message-card small {
-  font-style: italic;
-  letter-spacing: 1px;
-}
 
 .message-card {
-  background: #fffaf3;
-  padding: 25px;
-  border-radius: 22px;
-  text-align: left;
-  margin-top: 20px;
-  box-shadow: 0 8px 25px rgba(120, 90, 60, 0.08);
+  background: #faf7f2;
+  padding: 18px;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
 
 .message-card strong {
-  font-size: 16px;
-  font-weight: 500;
-  color: #6b5545;
+  font-size: 15px;
 }
 
 
 .message-card p {
-  margin-top: 15px;
-  line-height: 1.8;
-  color: #7c6b5d;
-}
-
-
-.message-card hr {
-  border: none;
-  border-top: 1px solid #eadfd3;
-  margin: 20px 0 12px;
+  margin: 15px 0;
+  line-height: 1.5;
 }
 
 
 .message-card small {
-  display: block;
-  color: #b7a392;
-  font-size: 12px;
-  font-style: italic;
-  letter-spacing: 1px;
-  text-align: right;
+  color: #999;
 }

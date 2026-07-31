@@ -1,7 +1,7 @@
 const button = document.querySelector("button");
 const nameInput = document.querySelector("input");
 const messageInput = document.querySelector("textarea");
-const messages = document.querySelector(".messages");
+const messages = document.querySelector("#messages");
 
 
 button.addEventListener("click", function() {

@@ -1,3 +1,19 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAfAL_Fw3ScSXT5W_Z9pdxz-_PTD1wASso",
+  authDomain: "little-memory-46ca0.firebaseapp.com",
+  projectId: "little-memory-46ca0",
+  storageBucket: "little-memory-46ca0.firebasestorage.app",
+  messagingSenderId: "911159081602",
+  appId: "1:911159081602:web:a95a5a96822f328cfc529b"
+};
+
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 const button = document.querySelector("button");
 const nameInput = document.querySelector("#name");
 const messageInput = document.querySelector("#message");

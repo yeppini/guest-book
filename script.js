@@ -20,7 +20,7 @@ const messageInput = document.querySelector("#message");
 const messages = document.querySelector("#messages");
 
 
-button.addEventListener("click", function() {
+button.addEventListener("click", async function() {
 
 
   const confirmSend = confirm("Send this letter? 🤍");
@@ -32,6 +32,11 @@ button.addEventListener("click", function() {
 
   const name = nameInput.value;
   const message = messageInput.value;
+  await addDoc(collection(db, "messages"), {
+  name: name,
+  message: message,
+  date: today
+});
 
 
   if (name === "" || message === "") {

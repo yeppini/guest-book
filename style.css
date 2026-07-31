@@ -1,0 +1,58 @@
+body {
+  background-color: #faf7f2;
+  color: #4b4038;
+  font-family: "Georgia", serif;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+h1 {
+  font-size: 42px;
+  letter-spacing: 8px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  color: #8a7b70;
+  line-height: 1.8;
+}
+
+hr {
+  width: 80px;
+  border: none;
+  border-top: 1px solid #d8cbbd;
+  margin: 40px auto;
+}
+
+input,
+textarea {
+  width: 90%;
+  max-width: 400px;
+  padding: 15px;
+  border: 1px solid #e3d8cc;
+  border-radius: 15px;
+  background-color: #fffdf9;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+button {
+  background-color: #c9a98b;
+  color: white;
+  border: none;
+  padding: 14px 35px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}

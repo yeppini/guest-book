@@ -16,22 +16,23 @@ button.addEventListener("click", function() {
   }
 
 
+  const date = new Date();
+
+  const today =
+    date.getFullYear() + "." +
+    String(date.getMonth() + 1).padStart(2, "0") + "." +
+    String(date.getDate()).padStart(2, "0");
+
+
   const card = document.createElement("div");
   card.className = "message-card";
 
-const date = new Date();
 
-const today = 
-  date.getFullYear() + "." +
-  String(date.getMonth() + 1).padStart(2, "0") + "." +
-  String(date.getDate()).padStart(2, "0");
-
-
-card.innerHTML = `
+  card.innerHTML = `
     <strong>${name}</strong>
     <p>${message}</p>
     <small>${today}</small>
-`;
+  `;
 
 
   messages.appendChild(card);

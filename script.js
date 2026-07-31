@@ -5,6 +5,7 @@ const messages = document.querySelector(".messages");
 
 
 button.addEventListener("click", function() {
+  
 const confirmSend = confirm("Send this letter? 🤍");
 
 if (!confirmSend) {

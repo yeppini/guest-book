@@ -1,6 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-
+import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAfAL_Fw3ScSXT5W_Z9pdxz-_PTD1wASso",
@@ -87,3 +86,28 @@ button.addEventListener("click", async function() {
 
 
 });
+async function loadMessages() {
+
+  const querySnapshot = await getDocs(collection(db, "messages"));
+
+  querySnapshot.forEach((doc) => {
+
+    const data = doc.data();
+
+    const card = document.createElement("div");
+    card.className = "message-card";
+
+    card.innerHTML = `
+      <strong>♡ ${data.name}</strong>
+      <p>${data.message}</p>
+      <hr>
+      <small>${data.date}</small>
+    `;
+
+    messages.prepend(card);
+
+  });
+
+}
+
+loadMessages();

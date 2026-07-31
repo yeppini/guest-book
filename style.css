@@ -1,9 +1,10 @@
 body {
   margin: 0;
-  background: #faf7f2;
-  font-family: Arial, sans-serif;
-  color: #444;
+  background: #f8f3ed;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+  color: #5c5148;
 }
+
 
 .container {
   max-width: 500px;
@@ -12,31 +13,42 @@ body {
 }
 
 
+/* 제목 */
+
 h1 {
   text-align: center;
   font-size: 38px;
+  font-weight: 600;
+  color: #4d4038;
+  letter-spacing: -1px;
   margin-bottom: 10px;
 }
 
 
 .subtitle {
   text-align: center;
-  color: #888;
+  color: #a08f82;
+  font-size: 14px;
   margin-bottom: 40px;
 }
 
 
+/* 작성 공간 */
+
 .letter-box,
 .messages {
-  background: white;
+  background: #fffdf9;
   padding: 25px;
-  border-radius: 20px;
+  border-radius: 22px;
   margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(80, 60, 40, 0.05);
 }
 
 
 h2 {
   font-size: 20px;
+  font-weight: 500;
+  color: #6b584c;
   margin-bottom: 20px;
 }
 
@@ -45,17 +57,30 @@ label {
   display: block;
   margin-top: 15px;
   margin-bottom: 8px;
+  font-size: 14px;
+  color: #806f62;
 }
 
+
+/* 입력창 */
 
 input,
 textarea {
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 12px;
+  border: 1px solid #e8ddd2;
+  background: #fffaf5;
+  border-radius: 14px;
+  padding: 13px;
   font-size: 15px;
+  font-family: inherit;
+  color: #5c5148;
+}
+
+
+input::placeholder,
+textarea::placeholder {
+  color: #b9aa9d;
 }
 
 
@@ -65,37 +90,56 @@ textarea {
 }
 
 
+/* 버튼 */
+
 button {
   width: 100%;
   margin-top: 20px;
   padding: 14px;
   border: none;
-  border-radius: 20px;
-  background: #444;
+  border-radius: 22px;
+  background: #8b7567;
   color: white;
   font-size: 15px;
+  cursor: pointer;
+}
+
+
+button:hover {
+  opacity: 0.9;
+}
+
+
+/* 편지 목록 */
+
+.messages h2 {
+  margin-bottom: 20px;
 }
 
 
 .message-card {
-  background: #faf7f2;
+  background: #fff8f1;
   padding: 18px;
-  border-radius: 15px;
+  border-radius: 16px;
   margin-bottom: 15px;
+  color: #5c5148;
 }
 
 
 .message-card strong {
   font-size: 15px;
+  color: #57473c;
 }
 
 
 .message-card p {
   margin: 15px 0;
-  line-height: 1.5;
+  line-height: 1.6;
+  font-size: 15px;
 }
 
 
 .message-card small {
-  color: #999;
+  color: #b19e8f;
+  font-size: 12px;
 }

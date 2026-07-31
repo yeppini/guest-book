@@ -5,7 +5,7 @@ const messages = document.querySelector(".messages");
 
 
 button.addEventListener("click", function() {
-const confirmSend = confirm("이 편지를 남길까요? 🤍");
+const confirmSend = confirm("Send this letter? 🤍");
 
 if (!confirmSend) {
   return;

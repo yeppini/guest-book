@@ -139,3 +139,43 @@ button {
   font-style: italic;
   letter-spacing: 1px;
 }
+
+.message-card {
+  background: #fffaf3;
+  padding: 25px;
+  border-radius: 22px;
+  text-align: left;
+  margin-top: 20px;
+  box-shadow: 0 8px 25px rgba(120, 90, 60, 0.08);
+}
+
+
+.message-card strong {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6b5545;
+}
+
+
+.message-card p {
+  margin-top: 15px;
+  line-height: 1.8;
+  color: #7c6b5d;
+}
+
+
+.message-card hr {
+  border: none;
+  border-top: 1px solid #eadfd3;
+  margin: 20px 0 12px;
+}
+
+
+.message-card small {
+  display: block;
+  color: #b7a392;
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-align: right;
+}

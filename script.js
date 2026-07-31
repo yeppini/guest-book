@@ -42,7 +42,7 @@ const today =
 `;
 
 
-  messages.appendChild(card);
+  messages.prepend(card);
 
 
   nameInput.value = "";

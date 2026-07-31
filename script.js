@@ -19,11 +19,19 @@ button.addEventListener("click", function() {
   const card = document.createElement("div");
   card.className = "message-card";
 
+const date = new Date();
 
-  card.innerHTML = `
+const today = 
+  date.getFullYear() + "." +
+  String(date.getMonth() + 1).padStart(2, "0") + "." +
+  String(date.getDate()).padStart(2, "0");
+
+
+card.innerHTML = `
     <strong>${name}</strong>
     <p>${message}</p>
-  `;
+    <small>${today}</small>
+`;
 
 
   messages.appendChild(card);

@@ -14,14 +14,15 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+
+
 const button = document.querySelector("button");
-const nameInput = document.querySelector("#name");
-const messageInput = document.querySelector("#message");
+const nameInput = document.querySelector("input");
+const messageInput = document.querySelector("textarea");
 const messages = document.querySelector("#messages");
 
 
 button.addEventListener("click", async function() {
-
 
   const confirmSend = confirm("Send this letter? 🤍");
 
@@ -32,11 +33,6 @@ button.addEventListener("click", async function() {
 
   const name = nameInput.value;
   const message = messageInput.value;
-  await addDoc(collection(db, "messages"), {
-  name: name,
-  message: message,
-  date: today
-});
 
 
   if (name === "" || message === "") {
@@ -54,21 +50,31 @@ button.addEventListener("click", async function() {
     "Oct", "Nov", "Dec"
   ];
 
-
   const today =
     months[date.getMonth()] + " " +
     String(date.getDate()).padStart(2, "0") + ", " +
     date.getFullYear();
 
 
-  const card = document.createElement("div");
 
+  // Firebase 저장
+  await addDoc(collection(db, "messages"), {
+    name: name,
+    message: message,
+    date: today
+  });
+
+
+
+  // 화면에 카드 만들기
+  const card = document.createElement("div");
   card.className = "message-card";
 
 
   card.innerHTML = `
     <strong>♡ ${name}</strong>
     <p>${message}</p>
+    <hr>
     <small>${today}</small>
   `;
 
@@ -78,5 +84,6 @@ button.addEventListener("click", async function() {
 
   nameInput.value = "";
   messageInput.value = "";
+
 
 });

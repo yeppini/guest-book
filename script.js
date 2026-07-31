@@ -35,10 +35,11 @@ const today =
 
 
   card.innerHTML = `
-    <strong>${name}</strong>
+    <strong>♡ ${name}</strong>
     <p>${message}</p>
+    <hr>
     <small>${today}</small>
-  `;
+`;
 
 
   messages.appendChild(card);

@@ -103,3 +103,14 @@ button {
 .message-card p {
   color: #7c6b5d;
 }
+
+.letter-box {
+  display: block;
+}
+
+.letter-box input,
+.letter-box textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
